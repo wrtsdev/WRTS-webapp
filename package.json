@@ -5,9 +5,9 @@
   "description": "Official web app for We Run These Streetz (WRTS) — a community wellness and engagement company powered by movement culture.",
   "scripts": {
     "dev": "vite",
-    "start": "vite",
+    "start": "vite --host 0.0.0.0",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview --host 0.0.0.0"
   },
   "keywords": [
     "wrts",
@@ -21,5 +21,8 @@
   "license": "UNLICENSED",
   "devDependencies": {
     "vite": "^7.1.7"
+  },
+  "engines": {
+    "node": ">=20 <23"
   }
 }
