@@ -1,19 +1,30 @@
-export const pillars=[
-{name:'Wealth',action:'OWN',copy:'Ownership, financial capability and entrepreneurship.',image:'photos/wealth.jpg',alt:'Community entrepreneurship and ownership'},
-{name:'Wellness',action:'HEAL',copy:'Physical, mental and social wellbeing through movement.',image:'photos/wellness.jpg',alt:'People moving together for wellness'},
-{name:'Wisdom',action:'CREATE',copy:'History, creativity, learning and knowledge carried forward.',image:'photos/wisdom.jpg',alt:'Community learning and storytelling'},
-{name:'Work',action:'BUILD',copy:'Purposeful effort, workforce growth and service.',image:'photos/work.jpg',alt:'People building and working in community'}];
-export const legacy=[
-{pillar:'Wealth',place:'Greenwood',title:'Greenwood Exchange Run',copy:'Black Wall Street and ownership.',action:'Own the Legacy.',image:'photos/legacy-greenwood.jpg'},
-{pillar:'Wellness',place:'Galveston',title:'Freedom in Motion',copy:'Freedom, movement and wellbeing.',action:'Heal the Legacy.',image:'photos/legacy-galveston.jpg'},
-{pillar:'Wisdom',place:'Harlem',title:'Harlem Renaissance Run',copy:'Ideas, expression and cultural knowledge.',action:'Create the Legacy.',image:'photos/legacy-harlem.jpg'},
-{pillar:'Work',place:'Bronzeville',title:'Bronzeville Builders Run',copy:'The work that built institutions.',action:'Work Built the Legacy.',image:'photos/legacy-bronzeville.jpg'}];
-export const experiences=[
-{label:'Flagship Series',title:'Run the Legacy',copy:'Four historical chapters. Four 4Ws. One collectible journey.',image:'photos/event-run-the-legacy.jpg'},
-{label:'DMV',title:'Monument Mile',copy:'Place, purpose and the WRTS Wayfinder.',image:'photos/event-monument-mile.jpg'},
-{label:'Anywhere',title:'Community Challenges',copy:'Accessible movement designed for everyday participation.',image:'photos/event-community.jpg'}];
-export const products=[
-{tag:'FULL SERIES',title:'4Ws Collector Bundle',copy:'Four medals, four entries, story cards, Legacy Passport and premium apparel.',image:'products/legacy-bundle.jpg'},
-{tag:'COLLECT',title:'Legacy Passport',copy:'Your physical record of every chapter, completion and mark.',image:'products/legacy-passport.jpg'},
-{tag:'WEAR',title:'Chapter Apparel',copy:'Performance tees and premium hoodies built around each legacy chapter.',image:'products/legacy-apparel.jpg'}];
-export const communityPhotos=['photos/community-01.jpg','photos/community-02.jpg','photos/community-03.jpg','photos/community-04.jpg'];
+export const siteConfig={
+  currentQuarter:'Q3',
+  navigation:['Home','The 4Ws','Challenges','Community','Impact','Partners','About'],
+  message:'Move Forward Together.'
+};
+
+export const quarters=[
+{quarter:'Q1',pillar:'Wellness',theme:'Move Better',months:'January–March',question:'How do we improve our health together?',purpose:'Build healthier individuals, families, and communities through movement and healthier habits.',focus:['Movement','Physical activity','Nutrition','Mental well-being','Community recreation','Preventive wellness']},
+{quarter:'Q2',pillar:'Wealth',theme:'Build Capacity',months:'April–June',question:'How do we strengthen our financial future?',purpose:'Strengthen financial well-being, confidence, stability, and economic mobility.',focus:['Financial capability','Saving','Budgeting','Credit','Investing','Homeownership','Entrepreneurship']},
+{quarter:'Q3',pillar:'Wisdom',theme:'Grow Together',months:'July–September',question:'How do we learn, lead, and grow together?',purpose:'Develop informed, connected, confident people and community leaders through learning, mentorship, and shared knowledge.',focus:['Leadership','Education','Mentorship','Reading','Youth development','Cultural learning','Community participation']},
+{quarter:'Q4',pillar:'Work',theme:'Create Opportunity',months:'October–December',question:'How do we advance our careers, businesses, and opportunities?',purpose:'Increase access to careers, entrepreneurship, skills, networks, and economic opportunity.',focus:['Career readiness','Workforce development','Entrepreneurship','Networking','Skills development','Professional advancement']}
+];
+export const currentQuarter=quarters.find(q=>q.quarter===siteConfig.currentQuarter);
+export const challenges=[
+{title:'Community Challenge',pillar:'Wellness',quarter:'Q1',description:'Reusable challenge architecture ready for approved wellness programming.',status:'Prototype',format:'Individual or team',cta:'View Challenge'},
+{title:'Run Your Money™',pillar:'Wealth',quarter:'Q2',description:'Financial-fitness challenge architecture for financial capability and confidence.',status:'Planned',format:'Individual',cta:'Learn More'},
+{title:'Learning & Mentorship Challenge',pillar:'Wisdom',quarter:'Q3',description:'Prototype pathway for learning, mentorship and shared community knowledge.',status:'Prototype',format:'Individual or team',cta:'View Challenge'}
+];
+export const partnerTypes=[
+{title:'Sponsor',copy:'Expand access to measurable community advancement.'},
+{title:'Community Partner',copy:'Bring WRTS challenges and experiences into local communities.'},
+{title:'Employer',copy:'Activate employees and communities through Four Ws programming.'},
+{title:'Public-Sector Partner',copy:'Use WRTS programming for community engagement and advancement.'}
+];
+export const impactMetrics=[
+{label:'Participants',value:'—'},{label:'Communities',value:'—'},{label:'Challenges Completed',value:'—'},{label:'Partner Organizations',value:'—'}
+];
+export const passportSample=[
+{pillar:'Wellness',status:'3 activities'},{pillar:'Wealth',status:'1 challenge completed'},{pillar:'Wisdom',status:'Upcoming'},{pillar:'Work',status:'Upcoming'}
+];
