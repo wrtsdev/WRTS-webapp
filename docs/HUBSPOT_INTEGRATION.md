@@ -21,3 +21,13 @@ Volunteer: form → segmentation → opportunity communication → follow-up.
 
 ## Guardrails
 Collect only necessary information, include appropriate consent language, and route authenticated API operations through a server-side layer.
+
+
+## Verified Join WRTS form
+The production Join WRTS embed supplied by the WRTS HubSpot account uses:
+- Region: na2
+- Portal ID: 247477120
+- Form ID: b177ab50-1dd0-44e9-bb3b-7112141d9605
+- Embed script: https://js-na2.hsforms.net/forms/embed/247477120.js
+
+The public portal and form identifiers are safe to use in the browser. Private HubSpot access tokens remain server-side only and must never be committed.
