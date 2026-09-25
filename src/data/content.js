@@ -16,6 +16,22 @@ export const challenges=[
 {title:'Run Your Money™',pillar:'Wealth',quarter:'Q2',description:'Financial-fitness challenge architecture for financial capability and confidence.',status:'Planned',format:'Individual',cta:'Learn More'},
 {title:'Learning & Mentorship Challenge',pillar:'Wisdom',quarter:'Q3',description:'Prototype pathway for learning, mentorship and shared community knowledge.',status:'Prototype',format:'Individual or team',cta:'View Challenge'}
 ];
+export const q4Product={
+title:'RUN THE GIFT',
+subtitle:'A WRTS Holiday Giving Challenge',
+pillar:'Work',
+quarter:'Q4',
+season:'December',
+distance:'3.1-mile virtual challenge',
+theme:'Create Opportunity',
+message:'THE GIFT IS YOU',
+prompt:'WHAT WILL YOU GIVE?',
+description:'A holiday movement experience that turns the Q4 Work pillar into action through participation, purpose, and a premium gift-box collector experience.',
+features:['3.1-mile virtual challenge','Interactive gift-box medal concept','Removable ornament element','WRTS performance shirt','4Ws storytelling','250-unit first edition'],
+pricing:[{label:'Early',price:'$49'},{label:'Standard',price:'$59'},{label:'Collector',price:'$79'},{label:'Family',price:'$159'}],
+partnerNote:'The Gifted Crate is acknowledged as the holiday charity partner. Pricing and site language must not state or imply that a contribution or portion of proceeds is being made to The Gifted Crate.'
+};
+
 export const partnerTypes=[
 {title:'Sponsor',copy:'Expand access to measurable community advancement.'},
 {title:'Community Partner',copy:'Bring WRTS challenges and experiences into local communities.'},
