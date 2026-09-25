@@ -1,1 +1,19 @@
-{"brand":"We Run These Streetz","short":"WRTS","tagline":"Run. Learn. Build.","positioning":"A community wellness and engagement company powered by movement culture.","colors":{"electricBlue":"#048EFC","deepBlue":"#020A48","midnightNavy":"#070A20","skyAccent":"#52C2F4","white":"#FFFFFF"},"pillars":["Wealth","Wellness","Wisdom","Work"]}
+{
+  "brand": "We Run These Streetz",
+  "short": "WRTS",
+  "tagline": "Move Forward Together.",
+  "positioning": "A community wellness and engagement company powered by movement culture.",
+  "logoSystem": {
+    "primary": "/assets/brand/wrts-primary-logo.webp",
+    "wordmark": "/assets/brand/wrts-wordmark.webp"
+  },
+  "colors": {
+    "wrtsRoyalBlue": "#0B14C7",
+    "wrtsIndigo": "#110EA1",
+    "deepBlue": "#050B54",
+    "black": "#000000",
+    "white": "#FFFFFF",
+    "iceBlue": "#C8D7FF"
+  },
+  "pillars": ["Wellness", "Wealth", "Wisdom", "Work"]
+}
