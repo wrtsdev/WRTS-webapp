@@ -7,7 +7,8 @@
     "dev": "vite",
     "start": "vite --host 0.0.0.0",
     "build": "vite build",
-    "preview": "vite preview --host 0.0.0.0"
+    "preview": "vite preview --host 0.0.0.0",
+    "check": "npm run build"
   },
   "keywords": [
     "wrts",
@@ -29,5 +30,6 @@
   "dependencies": {
     "react": "19.1.1",
     "react-dom": "19.1.1"
-  }
+  },
+  "packageManager": "npm@10.9.2"
 }
