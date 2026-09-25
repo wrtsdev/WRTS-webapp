@@ -24,5 +24,10 @@
   },
   "engines": {
     "node": ">=20 <23"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "react": "latest",
+    "react-dom": "latest"
   }
 }
