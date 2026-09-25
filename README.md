@@ -1,42 +1,50 @@
-# WRTS webapp
+# WRTS Web App
 
-Official web-app foundation for **We Run These Streetz (WRTS)**.
+Production foundation for **We Run These Streetz LLC (WRTS)**.
 
-> Run. Learn. Build.
+**Positioning:** WRTS is a community wellness and engagement company powered by movement culture.
 
-WRTS is a community wellness and engagement company powered by movement culture.
+**Mission:** Strengthen communities through Wellness, Wealth, Wisdom, and Work.
 
-## Brand architecture
-- Wealth — Own the Legacy
-- Wellness — Heal the Legacy
-- Wisdom — Create the Legacy
-- Work — Build the Legacy
+**Core experience:** Move Forward Together.
 
-## Current experience
-This first deployable build includes:
-- WRTS master-brand landing experience
-- 4Ws framework
-- Run the Legacy series
-- Events architecture
-- Collect the Legacy merchandising preview
-- Responsive/mobile layout
-- Waitlist UI ready for HubSpot integration
+## Product architecture
+- Q1 Wellness — Move Better
+- Q2 Wealth — Build Capacity
+- Q3 Wisdom — Grow Together
+- Q4 Work — Create Opportunity
+- Reusable challenge architecture
+- WRTS Passport prototype
+- Community Intelligence: Listen → Engage → Learn → Improve
+- Partner pathways for sponsors, community organizations, employers and public-sector partners
+- HubSpot-ready lead and participant journeys
 
-## Product roadmap
-1. HubSpot CRM + waitlist forms
-2. WRTS account/profile layer
-3. Passport + 4Ws progress tracking
-4. Event/challenge registration
-5. Collect the Legacy commerce
-6. Third-party race timing/live tracking integrations
-7. Community Intelligence features
-
-WRTS does **not** use PMSuite.
+Events are delivery mechanisms, not the WRTS identity. Lazy Lobster is not part of the WRTS core architecture and should only be represented, when relevant, as a community partnership.
 
 ## Run locally
-Open `index.html` in a browser. No build step is required for this MVP.
+```bash
+npm install
+npm run dev
+```
 
-## Deployment
-Static-host compatible. Can be deployed through GitHub Pages, Hostinger, Netlify, Vercel, or another static host.
+## Production build
+```bash
+npm run build
+npm run preview
+```
 
-© We Run These Streetz LLC
+## Architecture
+- React + Vite frontend
+- GitHub source of truth
+- Hostinger deployment
+- HubSpot CRM
+- Future proprietary WRTS application/data layer for Passport, challenges, community and Community Intelligence
+- Third-party timing/live tracking only where appropriate
+- PMSuite is excluded
+
+## Working vs prototype
+Working: responsive React UI, quarter configuration, Four Ws annual cycle, challenge filtering, accessibility foundations.
+
+Prototype: Passport data, impact metrics, challenge enrollment and join form. These are intentionally labeled and must not be represented as production integrations.
+
+See `docs/DEPLOYMENT_ARCHITECTURE.md` and `docs/HUBSPOT_INTEGRATION.md`.
