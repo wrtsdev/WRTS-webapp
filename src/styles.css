@@ -20,3 +20,5 @@
 
 /* HubSpot form integration */
 .hubspotWrap{max-width:680px;margin:28px auto 0;text-align:left;background:#fff;border-radius:24px;padding:24px;box-shadow:0 22px 55px #0003;color:var(--ink)}.hubspotWrap .hs-form-field{margin-bottom:16px}.hubspotWrap label{font-weight:800;color:var(--navy)}.hubspotWrap input,.hubspotWrap select,.hubspotWrap textarea{width:100%!important;border:1px solid var(--line)!important;border-radius:12px!important;padding:13px!important}.hubspotWrap .hs-button{border:0!important;border-radius:999px!important;background:var(--blue)!important;color:#fff!important;font-weight:900!important;padding:14px 22px!important;cursor:pointer}.formStatus{color:#7a3140!important;font-weight:800}.formSuccess{color:#075c36!important;font-weight:900}
+
+.eventosNavLink{color:#aab8ff!important;font-weight:950!important}

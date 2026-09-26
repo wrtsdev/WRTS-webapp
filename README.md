@@ -48,3 +48,19 @@ Working: responsive React UI, quarter configuration, Four Ws annual cycle, chall
 Prototype: Passport data, impact metrics, challenge enrollment and join form. These are intentionally labeled and must not be represented as production integrations.
 
 See `docs/DEPLOYMENT_ARCHITECTURE.md` and `docs/HUBSPOT_INTEGRATION.md`.
+
+
+## EventOS prototype
+
+A mobile-first WRTS EventOS prototype is available at `#eventos` on the feature branch. It demonstrates the proposed relationship layer above registration/timing platforms:
+
+- Command Center with participant and organizer modes
+- Events portfolio
+- WRTS Passport
+- CauseOS impact view
+- Community Intelligence and audience segments
+- Vendor-neutral integrations view
+
+All analytics and event metrics in the prototype are sample data. The UI does not claim production RunSignup, Race Roster, timing or live-data connections.
+
+See `docs/EVENTOS_ARCHITECTURE.md` for the production boundary and roadmap.
