@@ -1,6 +1,6 @@
 export const siteConfig={
   currentQuarter:'Q3',
-  navigation:['Home','The 4Ws','Challenges','Community','Impact','Partners','About'],
+  navigation:['Home','The 4Ws','Challenges','Events','Community','Impact','Partners','About'],
   message:'Move Forward Together.'
 };
 
