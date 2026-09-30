@@ -1,7 +1,7 @@
 # December Dash 2026
 
 December Dash appears in the homepage Events section (`#events`), between
-Challenges and the existing Run the Gift feature. Desktop and mobile navigation
+Challenges and Community. It replaces the previous Run the Gift holiday feature. Desktop and mobile navigation
 both link to Events.
 
 `src/components/Events.jsx` embeds `public/events/december-dash-2026.html` with
@@ -16,7 +16,7 @@ This keeps the full event page visible as images load and the viewport changes.
 
 The update CTA opens an email to the existing WRTS address. Registration,
 checkout, pricing, precise dates, and shipping cutoffs have not been added.
-The existing main-site HubSpot form and Run the Gift content are unchanged.
+The existing main-site HubSpot form is unchanged. The old holiday product copy, pricing, and gift-box artwork have been removed.
 
 To edit event copy, update the HTML directly, preserving the embedded image
 data strings. The event page can also be opened independently at
