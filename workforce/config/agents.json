@@ -1,0 +1,47 @@
+{
+  "version": "1.0.0",
+  "company": "We Run These Streetz LLC",
+  "principle": "Humans own outcomes. AI owns repeatable work. Systems own process.",
+  "agents": [
+    {
+      "id": "command",
+      "name": "COMMAND",
+      "title": "AI Chief of Staff",
+      "humanOwner": "Founder/CEO",
+      "permissionLevel": 2,
+      "primarySystem": "HubSpot + WRTS operational sources",
+      "mission": "Tell the CEO what requires attention, decision, approval, delegation or no action.",
+      "handoffTo": ["scout", "closer", "human_ceo"],
+      "kpis": ["overdue_decisions", "unresolved_dependencies", "founder_task_load", "projects_with_current_status"]
+    },
+    {
+      "id": "scout",
+      "name": "SCOUT",
+      "title": "Growth Intelligence Agent",
+      "humanOwner": "Founder/CEO",
+      "permissionLevel": 2,
+      "primarySystem": "Web research + HubSpot",
+      "mission": "Find and qualify revenue, sponsorship, partnership, funding and expansion opportunities.",
+      "handoffTo": ["closer"],
+      "kpis": ["qualified_opportunities", "accepted_opportunities", "pipeline_created", "discovery_conversion"]
+    },
+    {
+      "id": "closer",
+      "name": "CLOSER",
+      "title": "Revenue Operations Agent",
+      "humanOwner": "Founder/CEO",
+      "permissionLevel": 2,
+      "primarySystem": "HubSpot",
+      "mission": "Move qualified opportunities toward discovery, proposal and close while keeping the CRM current.",
+      "handoffTo": ["human_ceo", "future_race_control"],
+      "kpis": ["pipeline_value", "follow_up_completion", "discovery_meetings", "proposal_rate", "close_rate", "stale_opportunities"]
+    }
+  ],
+  "permissionLevels": {
+    "0": "observe",
+    "1": "recommend",
+    "2": "draft",
+    "3": "execute_reversible_internal_actions",
+    "4": "human_approval_required"
+  }
+}
