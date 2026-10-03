@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "WRTS Qualified Opportunity",
+  "type": "object",
+  "required": [
+    "organization",
+    "opportunityName",
+    "opportunityType",
+    "whyWrtsFits",
+    "recommendedOffer",
+    "recommendedNextAction",
+    "scores"
+  ],
+  "properties": {
+    "organization": {"type": "string"},
+    "opportunityName": {"type": "string"},
+    "opportunityType": {
+      "type": "string",
+      "enum": ["event_services", "corporate_wellness", "sponsorship", "partnership", "grant", "channel"]
+    },
+    "source": {"type": "string"},
+    "whyWrtsFits": {"type": "string"},
+    "decisionMaker": {"type": ["string", "null"]},
+    "geography": {"type": ["string", "null"]},
+    "deadline": {"type": ["string", "null"]},
+    "estimatedValueLow": {"type": ["number", "null"]},
+    "estimatedValueHigh": {"type": ["number", "null"]},
+    "estimateBasis": {"type": ["string", "null"]},
+    "confidence": {"type": "string", "enum": ["low", "medium", "high"]},
+    "recommendedOffer": {"type": "string"},
+    "recommendedNextAction": {"type": "string"},
+    "scores": {
+      "type": "object",
+      "required": ["fit", "value", "access", "timing", "expansion"],
+      "properties": {
+        "fit": {"type": "integer", "minimum": 1, "maximum": 5},
+        "value": {"type": "integer", "minimum": 1, "maximum": 5},
+        "access": {"type": "integer", "minimum": 1, "maximum": 5},
+        "timing": {"type": "integer", "minimum": 1, "maximum": 5},
+        "expansion": {"type": "integer", "minimum": 1, "maximum": 5}
+      }
+    }
+  }
+}
