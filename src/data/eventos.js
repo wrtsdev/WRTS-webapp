@@ -9,7 +9,41 @@ export const eventOSMetrics = {
     {label:'Active participants', value:'1,284', delta:'+18% vs prior cycle'},
     {label:'Repeat rate', value:'38%', delta:'+9 pts'},
     {label:'Referral registrations', value:'12%', delta:'+5 pts'},
+    {label:'Participant lifetime value', value:'$184', delta:'+20% vs modeled prior period'},
     {label:'Impact captured', value:'74%', delta:'survey + behavior coverage'}
+  ]
+};
+
+export const lifetimeValueModel = {
+  participantLifetimeValue: {
+    value: 184,
+    formatted: '$184',
+    priorValue: 153,
+    change: '+20%',
+    horizon: '12-month modeled contribution'
+  },
+  communityLifetimeValue: {
+    value: 236256,
+    formatted: '$236K',
+    uniqueParticipants: 1284,
+    note: 'Modeled economic contribution across unique active participants'
+  },
+  communityValueIndex: {
+    score: 72,
+    change: '+8 pts',
+    note: 'Non-financial composite of repeat, referral, cause, volunteer and sponsor engagement'
+  },
+  components: [
+    {label:'Event contribution margin', value:94, share:51},
+    {label:'Membership + merchandise', value:38, share:21},
+    {label:'Referral contribution', value:29, share:16},
+    {label:'Sponsor-attributed value', value:23, share:12}
+  ],
+  drivers: [
+    {label:'Repeat participation', value:'38%'},
+    {label:'Referral participation', value:'12%'},
+    {label:'Cause engagement', value:'66%'},
+    {label:'Sponsor engagement', value:'42%'}
   ]
 };
 
