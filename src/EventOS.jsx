@@ -8,7 +8,8 @@ import {
   intelligenceSignals,
   segments,
   integrationCards,
-  activityFeed
+  activityFeed,
+  lifetimeValueModel
 } from './data/eventos';
 
 const navItems = [
@@ -33,6 +34,48 @@ function Metric({item}){
     <strong>{item.value}</strong>
     <small>{item.delta}</small>
   </article>
+}
+
+function LifetimeValuePanel({compact=false}){
+  const model=lifetimeValueModel;
+  return <section className={'osValuePanel '+(compact?'compact':'')}>
+    <div className="osValueHeader">
+      <div>
+        <span className="osEyebrow">Lifetime value engine</span>
+        <h2>Measure the value of the relationship—not just the registration.</h2>
+        <p>PLV tracks modeled economic contribution. Community Value Index tracks non-financial engagement separately so WRTS does not assign arbitrary dollar values to mission activity.</p>
+      </div>
+      <div className="osValueHero">
+        <span>Participant Lifetime Value</span>
+        <strong>{model.participantLifetimeValue.formatted}</strong>
+        <small>{model.participantLifetimeValue.change} · {model.participantLifetimeValue.horizon}</small>
+      </div>
+    </div>
+    <div className="osValueGrid">
+      <div className="osValueBreakdown">
+        <div className="osValueSectionTitle"><span>PLV components</span><b>{model.participantLifetimeValue.formatted}</b></div>
+        {model.components.map(item=><div className="osValueComponent" key={item.label}>
+          <div><span>{item.label}</span><b>${item.value}</b></div>
+          <div className="osValueBar"><span style={{width:item.share+'%'}}/></div>
+          <small>{item.share}% of modeled PLV</small>
+        </div>)}
+      </div>
+      <div className="osValueSummary">
+        <article>
+          <span>Community Lifetime Value</span>
+          <strong>{model.communityLifetimeValue.formatted}</strong>
+          <small>{model.communityLifetimeValue.uniqueParticipants.toLocaleString()} unique active participants</small>
+        </article>
+        <article>
+          <span>Community Value Index</span>
+          <strong>{model.communityValueIndex.score}<i>/100</i></strong>
+          <small>{model.communityValueIndex.change} · mission + engagement signal</small>
+        </article>
+        <div className="osDriverGrid">{model.drivers.map(item=><div key={item.label}><b>{item.value}</b><span>{item.label}</span></div>)}</div>
+      </div>
+    </div>
+    <p className="osFine">Prototype values only. Production PLV should use realized contribution margin and de-duplicated attributable referral/sponsor value; community impact remains a separate index.</p>
+  </section>
 }
 
 function EventCard({event}){
@@ -65,11 +108,12 @@ function Overview({role,setView}){
       </div>
       <div className="osSignal">
         <span>LIVE PROTOTYPE SIGNAL</span>
-        <strong>{role==='participant'?'82':'74%'}</strong>
-        <small>{role==='participant'?'community momentum':'impact coverage'}</small>
+        <strong>{role==='participant'?'82':lifetimeValueModel.communityLifetimeValue.formatted}</strong>
+        <small>{role==='participant'?'community momentum':'community lifetime value'}</small>
       </div>
     </section>
     <div className="osMetrics">{metrics.map(x=><Metric item={x} key={x.label}/>)}</div>
+    {role==='organizer'&&<LifetimeValuePanel/>}
     <div className="osSplit">
       <section className="osPanel">
         <div className="osPanelHead"><div><span className="osEyebrow">Next moves</span><h2>Events in motion</h2></div><button onClick={()=>setView('events')}>All events →</button></div>
@@ -132,6 +176,7 @@ function Causes(){
 function Intelligence(){
   return <section>
     <div className="osPageHead"><span className="osEyebrow">Community Intelligence</span><h1>Know what should happen next.</h1><p>Turn event behavior and consented feedback into decisions that improve retention, partner value and community relevance.</p></div>
+    <LifetimeValuePanel compact/>
     <div className="osIntelGrid">{intelligenceSignals.map(x=><article className="osIntelCard" key={x.title}><div><span>{x.title}</span><strong>{x.score}</strong></div><div className="osScore"><span style={{width:x.score+'%'}}/></div><p>{x.note}</p></article>)}</div>
     <div className="osPanel">
       <div className="osPanelHead"><div><span className="osEyebrow">Audience segments</span><h2>Recommended next actions</h2></div></div>
