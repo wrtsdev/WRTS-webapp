@@ -29,3 +29,16 @@
 .hubspotWrap{max-width:680px;margin:28px auto 0;text-align:left;background:#fff;border-radius:24px;padding:24px;box-shadow:0 22px 55px #0003;color:var(--ink)}.hubspotWrap .hs-form-field{margin-bottom:16px}.hubspotWrap label{font-weight:800;color:var(--navy)}.hubspotWrap input,.hubspotWrap select,.hubspotWrap textarea{width:100%!important;border:1px solid var(--line)!important;border-radius:12px!important;padding:13px!important}.hubspotWrap .hs-button{border:0!important;border-radius:999px!important;background:var(--blue)!important;color:#fff!important;font-weight:900!important;padding:14px 22px!important;cursor:pointer}.formStatus{color:#7a3140!important;font-weight:800}.formSuccess{color:#075c36!important;font-weight:900}
 
 .eventosNavLink{color:#aab8ff!important;font-weight:950!important}
+
+
+/* Dedicated December Dash lead capture (separate from paid registration). */
+.dashInterestJump{display:inline-flex;margin:0 0 18px;padding:13px 20px;border-radius:999px;background:#0b14c7;color:#fff;font-weight:800;text-decoration:none}
+.dashInterestJump:hover,.dashInterestJump:focus-visible{background:#050b54;color:#fff}
+.dashInterest{scroll-margin-top:110px;margin-top:34px;padding:34px 24px;border:1px solid #c8d7ff;border-radius:22px;background:#f3f6ff;text-align:center;color:#050b54}
+.dashInterestIntro{max-width:620px;margin:auto}
+.dashInterestIntro h3{font-size:clamp(1.5rem,3vw,2.2rem);margin:12px 0}
+.dashInterestIntro p{line-height:1.6}
+.dashInterestNote{font-weight:700;font-size:.9rem}
+.dashInterestForm{margin-top:22px}
+.dashInterestPending{max-width:600px;margin:20px auto 0;padding:18px;border:1px solid #c8d7ff;border-radius:12px;background:#fff;color:#050b54;font-weight:700}
+@media(max-width:620px){.dashInterest{padding:24px 14px;scroll-margin-top:85px}}
