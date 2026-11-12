@@ -1,4 +1,5 @@
 import {useEffect, useRef, useState} from 'react';
+import DecemberDashInterestForm from './DecemberDashInterestForm';
 
 const eventPage = `${import.meta.env.BASE_URL}events/december-dash-2026.html`;
 
@@ -28,6 +29,7 @@ export default function Events() {
           <h2 id="events-title">Make your next move a shared experience.</h2>
           <p>Explore December Dash 2026: a holiday 5K you can run or walk from anywhere.</p>
         </div>
+        <a className="dashInterestJump" href="#december-dash-interest">Get December Dash updates ↓</a>
         <iframe
           ref={frame}
           className="eventEmbed"
@@ -42,6 +44,7 @@ export default function Events() {
         <a className="eventFullPage" href={eventPage} target="_blank" rel="noopener noreferrer">
           Open December Dash in a new tab ↗
         </a>
+        <DecemberDashInterestForm />
       </div>
     </section>
   );
